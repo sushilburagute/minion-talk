@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap");
+
+:root {
+  --primary-color: #fbbf24;
+  --grey: #34383b;
+  --background: #f3f4f6;
+  --light-grey: #f5f5f5;
+  --dark-blue: #0962a7;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  background-color: var(--background);
+}
+
+h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 72px;
+}
+
+textarea {
+  width: 90%;
+  height: 10vh;
+  display: block;
+  margin: 1rem;
+  padding: 1rem;
+}
