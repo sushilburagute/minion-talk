@@ -12,14 +12,14 @@ function clickEventHandler() {
   //outputDiv.innerHTML = "Hello" + txtInput.value; // reading and processing the output to the screen
   const inputText = txtInput.value;
   txtInput.value = "";
-  // txtInput.placeholder = inputText;
+  txtInput.placeholder = "Just a second, we're making the minions translate...";
 
   fetch(getTranslationURL(inputText))
     .then((response) => response.json())
     .then((json) => {
       let translatedText = json.contents.translated;
       // outputDiv.innerHTML = translatedText;
-      // txtInput.placeholder = translatedText;
+      txtInput.placeholder = "Type something";
       txtInput.value = translatedText;
     })
     .catch(errorHandler);
